@@ -21,7 +21,7 @@
       <div class="line" id="line3"></div>
       <span>fechar</span>
     </div>
-    <header>
+    <header id="home">
 
       <div class="img-wrapper">
 
@@ -39,11 +39,11 @@
     <aside class="sidebar">
       <nav>
         <ul class="menu">
-          <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Conhecimento</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+          <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+          <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+          <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
         </ul>
       </nav>
       <div class="social-media">
@@ -53,7 +53,7 @@
       </div>
     </aside>
 
-    <section class="sessao-conhecimento">
+    <section class="sessao-conhecimento" id="conhecimentos">
       <div class="sessao-header">
         <h1>Conhecimentos</h1>
       </div>
@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <seciton class="sessao-projeto">
+    <seciton class="sessao-projeto" id="projetos">
       <div class="sessao-projetos" id="projetos">
         <div class="sessao-header">
           <h1>Projetos</h1>
@@ -176,7 +176,7 @@
         </div>
     </seciton>
 
-    <section class="sessao-contato">
+    <section class="sessao-contato" id="contato">
       <div class="contato-wrapper">
         <div class="contato-left"></div>
 
@@ -204,32 +204,52 @@
 
     </section>
 
-    <section class="sessao-orcamento">
+    <section class="sessao-orcamento" id="orcamento">
       <div class="orcamento-wrapper">
-          <h1>Faça um Orçamento</h1>
-          <form action="">
-            <label for="">Qtde de Páginas</label>
-            <input type="number" min="1" name="qtde" id="qtde">
-            <label for="js">Preciso de um Scripa Js</label>
-            <input type="checkbox" name="js" id="js">
-            <label for="">Layout</label>
-            <div class="group-layout">
-              <div>
-                <input type="radio" name="layout" id="layout-sim">
-                <label for="layout-sim">Preciso de um Layout</label>
-              </div>
-              <div>
-                <input type="radio" name="layout" id="layout-nao">
-                <label for="layout-nao">Já tenho um Layout</label>
-              </div>
+        <h1>Faça um Orçamento</h1>
+        <form action="">
+          <label for="">Qtde de Páginas</label>
+          <input type="number" min="1" name="qtde" id="qtde">
+          <label for="js">Preciso de um Scripa Js</label>
+          <input type="checkbox" name="js" id="js">
+          <label for="">Layout</label>
+          <div class="group-layout">
+            <div>
+              <input type="radio" name="layout" id="layout-sim">
+              <label for="layout-sim">Preciso de um Layout</label>
             </div>
-            <label for="prazo">Prazo</label>
-            <input type="range" name="prazo" id="prazo">
-            <button type="submit" class="btn btn-orcamento">Enviar</button>
-          </form>
+            <div>
+              <input type="radio" name="layout" id="layout-nao">
+              <label for="layout-nao">Já tenho um Layout</label>
+            </div>
+          </div>
+          <label for="prazo">Prazo</label>
+          <input type="range" name="prazo" id="prazo" min="1" max="10">
+          <label id="preco">R$ 0,00</label>
+          <button type="submit" class="btn btn-orcamento">Enviar</button>
+        </form>
       </div>
 
     </section>
+
+    <footer>
+      <div>
+        <div class="footer-content">
+          <p>Copyright &copy; Lorem ipsum dolor un</p>
+          <div class="social-list">
+            <ul>
+              <li><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li><a href=""><i class="fab fa-github"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+
+    </footer>
+    <a href="" id="link-topo">
+      <i class="fas fa-arrow-up"></i>
+    </a>
 
   </div>
 
