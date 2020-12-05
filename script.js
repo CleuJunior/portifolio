@@ -1,7 +1,6 @@
 document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
-
-)
+) 
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco)
 document.querySelector("#js").addEventListener("change", atualizarPreco)
@@ -11,7 +10,6 @@ document.querySelector("#prazo").addEventListener("change", function () {
     const prazo = document.querySelector("#prazo").value
     document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semana(s)`
     atualizarPreco()
-
 })
 
 
@@ -20,7 +18,6 @@ function atualizarPreco() {
     const temJS = document.querySelector("#js").checked
     const incluiLayout = document.querySelector("#layout-sim").checked
     const prazo = document.querySelector("#prazo").value
-
 
     let preco = qtde * 100
     if (temJS) preco *= 1.1    
